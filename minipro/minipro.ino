@@ -27,7 +27,7 @@ void loop() {
   Serial.println(b);*/
   Serial.println(addzeros(String(r)) +addzeros(String(g))
   + addzeros(String(b)));
-  delay(1000);
+  delay(500);
 }
 String addzeros(String  x){
   String y = "";
@@ -36,10 +36,10 @@ String addzeros(String  x){
     y = x;
     break;
   case 2:
-    y = x + "0";
+    y = "0" + x ;
     break;
   default:
-    y = x + "00";
+    y = "00" + x  ;
   break;  
 }
 return y ;
